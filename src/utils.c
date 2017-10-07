@@ -16,13 +16,7 @@ void mysh_parse_command(const char* command,
 	
 	token = strtok(command_2nd, str);
 	*argv = (char**)malloc(sizeof(char*)*NUM);
-	
-/*	if(token == NULL)
-	{
-		strcpy((*argv)[0],"");
-		i++;
-	}
-*/
+
 	while(token != NULL)
 	{
 		(*argv)[i] = (char*)malloc(sizeof(char)*NUM);
